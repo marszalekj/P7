@@ -1,0 +1,21 @@
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 209px;
+}
+
+#logo-footer {
+    width: 122px;
+
+}
+
+
+
+   
+footer h2 {
+ color: white ;
+ font-size: 24px;
+}

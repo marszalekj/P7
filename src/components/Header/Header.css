@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+#logo-header {
+    width: 210.33px;
+}
