@@ -1,0 +1,11 @@
+.home-main {
+    
+    max-width: 1240px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction:row;
+    max-width: 1240px;
+    background-color: #F6F6F6;
+}

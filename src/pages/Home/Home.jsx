@@ -1,14 +1,13 @@
-/*
-import Banner from "../components/Banner/Banner";
-import Card from "../components/Card/Card";
-import Houses from "../houses.json";
-import BannerHome from "../assets/backbannerhome.png"
+import Banner from "/Users/jeremy/Documents/Project 7/kasa/src/components/Banner/Banner.jsx";
+import Card from "/Users/jeremy/Documents/Project 7/kasa/src/components/Card/Card.jsx";
+import Houses from "/Users/jeremy/Documents/Project 7/kasa/src/houses.json";
+import BannerHome from "/Users/jeremy/Documents/Project 7/kasa/src/assets/backbannerhome.png"
+import "./Home.css"
 
 const Home = () => {
     return (
         <main className='home-main'>
-            <Banner img={BannerHome}/>
-            <div> Oui</div>
+            <Banner img={BannerHome} txt={"Chez vous, partout et ailleurs"}/>
                 <div className="gallery">
                     {
                         Houses.map((house) => (
@@ -16,15 +15,9 @@ const Home = () => {
                     }
                 </div>
         </main>
-    );
+    ); 
 };
 
-export default Home;
-*/
-const Home = () => {
-    const titre = "Home"
-     return (<h1>{titre}</h1>)
- };
 
 export default Home;
 

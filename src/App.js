@@ -3,8 +3,8 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Link,
-  Switch,
+
+  //Switch,
 } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Offers from "./pages/Offers/Offers";
@@ -16,8 +16,8 @@ import Footer from "./components/Footer/Footer";
 const App = (props) => {
   return (
     <div className="body-wrapper">
-      <Header />
       <Router>
+        <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />

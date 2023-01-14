@@ -1,11 +1,15 @@
-.card-container {
+#card-container {
     display: flex;
-    flex-direction: column;
-    width: 100%;
     max-width: 340px;
-    height: 255px;
+    max-height: 340px;
     border-radius: 10px;
     background-color: #ff6060;
  
 
+}
+
+.card-cover {
+    display: flex;
+    max-width: 340px;
+    max-height: 340px;
 }
