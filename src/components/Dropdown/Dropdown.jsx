@@ -1,4 +1,6 @@
 import useState from 'react';
+import vectorbas from "../../assets/Vectorbas.png"
+import vectorhaut from "../../assets/Vectorhaut.png"
 import "./Dropdown.scss"
 
 const Dropdown = ({ props, title }) => {
@@ -30,15 +32,15 @@ const Dropdown = ({ props, title }) => {
                     type='button'
                     onClick={() => handleClick()}
                 >{
-                    isVisible? <i className="fa-solid fa-chevron-up"></i> : <i className="fa-solid fa-chevron-down"></i>
+                    isVisible? <img src={vectorhaut} alt="Replier menu"/> : <img src={vectorbas} alt="Derouler menu"/>
                 }
                 </button>
             </div>
-            {isVisible && 
-                <div className={isVisible? 'dropdown-content  dropdown-active' : 'dropdown-content'}>
+            
+                <div >
                     {displayProps()}
                 </div>
-            }
+            
         </div>
     );
 }

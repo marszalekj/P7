@@ -1,5 +1,8 @@
 import { useParams, Navigate } from "react-router-dom"
-import Dropdown from '/Users/jeremy/Documents/Project 7/kasa/src/components/Dropdown/Dropdown.jsx';
+import Carrousel from "../../components/Carrousel/Carrousel";
+import Rating from "../../components/Rating/Rating";
+import Tag from "../../components/Tag/Tag";
+import Dropdown from "../../components/Dropdown/Dropdown"
 import Houses from '/Users/jeremy/Documents/Project 7/kasa/src/houses.json'
 import "./Offers.scss"
 
@@ -15,6 +18,7 @@ const Offers = () => {
 
     return (
         <main className="offers-main">
+            <Carrousel props={houses.pictures}/>
             <div className="offers-header">
                 <div className="offers-header_left">
                     <div className="offers-titles">
@@ -22,30 +26,29 @@ const Offers = () => {
                         <h2>{houses.location}</h2>
                     </div>
                     <div className="offers-tags">
-                            {/*<Tag tags={houses.tags}/>*/}
+                            <Tag props={houses.tags}/>
                     </div>
                 </div>
                 <div className="offers-header_right">
                     <div className="offers-info">
-                        <div className="offers-rating">
-                        {/*<Rating rating={accommodation.rating}/>*/}
-
-                        </div>
                         <div className="offers-owner">
-                            <span>{houses.host.name}</span>
+                            <div>{houses.host.name}</div>
                             <img src={`${houses.host.picture}`} alt="Portrait du Proprietaire" />
+                            <div className="offers-rating">
+                            <Rating props={houses.rating}/>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="offers-dropdowns">
+            {/*<div className="offers-dropdowns">
                     <div className="offers-desccription">
-                        <Dropdown props={houses.description} title={"description"}/>
+                        <Dropdown props={houses.description} title={"Description"}/>
                     </div>
                     <div className="offers-equipements">
-                        <Dropdown props={houses.equipments}title={"équipements"}/>
+                        <Dropdown props={houses.equipments} title={"Equipements"}/>
                     </div>
-            </div>
+    </div>*/}
         </main>
     );
 }
