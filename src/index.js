@@ -8,7 +8,7 @@ import {
   Switch,
 } from "react-router-dom";
 import App from "./App";
-import "./index.css";
+import "../src/style/index.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);

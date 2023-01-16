@@ -3,9 +3,9 @@ import vectorbas from "../../assets/Vectorbas.png"
 import vectorhaut from "../../assets/Vectorhaut.png"
 import "./Dropdown.scss"
 
-const Dropdown = ({ props, title }) => {
+const Dropdown = ({ props}, title ) => {
 
-    const [isVisible, setIsVisible] = useState(false)
+    const [isVisible, setIsVisible] = useState(0)
     
     const handleClick = () => {
         isVisible ? setIsVisible(false) : setIsVisible(true)
