@@ -1,12 +1,12 @@
 @import './variables.scss';
-@import './mixin.scss';
+@import './mixins.scss';
 @import './settings.scss';
 @import './components/banner';
 @import './components/card';
 @import './components/carrousel';
 @import './components/dropdown';
 @import './components/footer';
-@import './components/header';
+@import './components/header.scss';
 @import './components/rating';
 @import './components/tag';
 @import './pages/about';

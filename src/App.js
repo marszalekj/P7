@@ -12,10 +12,11 @@ import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import "../src/style/index.scss";
 
 const App = (props) => {
   return (
-    <div className="body-wrapper">
+    <div className="body-page">
       <Router>
         <Header />
         <Routes>

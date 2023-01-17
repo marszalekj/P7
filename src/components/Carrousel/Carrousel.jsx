@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './Carrousel.css';
 import previousImg from '../../assets/previous.png'
 import nextImg from '../../assets/next.png'
 
@@ -23,14 +22,12 @@ const Carrousel = ({props}) => {
 
     return (
         <div className="carrousel-container">
-            <div className="carrousel-img">
                 <img className='current-img' src={props[currentImg]} alt= 'Carrousel du logement'/>
-            </div>
-            <span className='carrousel-count'>
+            <div className='carrousel-count'>
                 {currentImg +1 }
                  / 
                 { props.length }
-            </span>
+            </div>
             <button className='previous-btn' onClick={previous}>
                 <img src={previousImg} alt="Bouton précédent" />
             </button>

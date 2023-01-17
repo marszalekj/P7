@@ -4,7 +4,6 @@ import Rating from "../../components/Rating/Rating";
 import Tag from "../../components/Tag/Tag";
 import Dropdown from "../../components/Dropdown/Dropdown"
 import Houses from '/Users/jeremy/Documents/Project 7/kasa/src/houses.json'
-import "./Offers.scss"
 
 
 const Offers = () => {

@@ -1,0 +1,19 @@
+.home-body {
+    margin-top: 16px;
+    @include for-tablette {
+    }
+}
+
+.gallery {
+    display: flex;
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    @include for-tablette {
+    background-color: $color-back;
+    }
+}

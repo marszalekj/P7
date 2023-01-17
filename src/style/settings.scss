@@ -1,6 +1,31 @@
 * {
     font-family: 'Montserrat', sans-serif;
-    color : $color-orange;
     font-weight: normal;
+    text-decoration: none;
+    max-width: 1440px;
 }
 
+a {
+    text-decoration: none;
+}
+
+.body-page {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+
+
+    @include for-tablette {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    }
+
+    @include for-desktop  {
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 40px;
+        }
+}

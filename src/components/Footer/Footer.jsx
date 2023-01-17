@@ -1,4 +1,3 @@
-import './Footer.css'
 import logoFooter from '../../assets/LOGOfooter.png'
 
 const Footer = () => {

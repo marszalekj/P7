@@ -1,4 +1,3 @@
-import './Tag.css';
 
 const Tag = ({props}) => {
     return (

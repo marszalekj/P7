@@ -1,7 +1,6 @@
 import useState from 'react';
 import vectorbas from "../../assets/Vectorbas.png"
 import vectorhaut from "../../assets/Vectorhaut.png"
-import "./Dropdown.scss"
 
 const Dropdown = ({ props}, title ) => {
 

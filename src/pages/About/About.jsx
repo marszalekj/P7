@@ -1,8 +1,6 @@
 import Banner from "/Users/jeremy/Documents/Project 7/kasa/src/components/Banner/Banner.jsx";
 import BannerAbout from "/Users/jeremy/Documents/Project 7/kasa/src/assets/backbannerabout.png"
 
-import './About.css';
-
 
 const About = () => {
     return (

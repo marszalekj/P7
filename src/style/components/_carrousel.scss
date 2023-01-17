@@ -1,0 +1,14 @@
+.carrousel-container {
+    position: relative;
+    height: 255px;
+    width: 1240px;
+   
+
+    .carrousel-img {
+        position: absolute;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

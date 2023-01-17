@@ -1,4 +1,3 @@
-import './Rating.css';
 import starfull from '../../assets/starfull.png';
 import starempty from '../../assets/starempty.png';
 
