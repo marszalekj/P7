@@ -6,7 +6,7 @@ import BannerHome from "/Users/jeremy/Documents/Project 7/kasa/src/assets/backba
 const Home = () => {
     return (
         <body className='home-body'>
-            <Banner img={BannerHome} txt={"Chez vous, partout et ailleurs"}/>
+            <Banner className="home-banner" img={BannerHome} txt={"Chez vous, partout et ailleurs"}/>
                 <div className="gallery">
                     {
                         Houses.map((house) => (

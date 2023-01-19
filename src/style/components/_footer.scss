@@ -5,6 +5,7 @@ footer {
     align-items: center;
     justify-content: center;
     height: 209px;
+    margin-top: 8px;
 }
 
 #logo-footer {
@@ -15,7 +16,11 @@ footer {
 
 
    
-footer h2 {
+.legal {
  color: white ;
- font-size: 24px;
+ font-size: 12px;
+ padding-top: 28px;
+ @include for-desktop {
+    font-size: 24px;
+ }
 }

@@ -1,10 +1,10 @@
 
 const Tag = ({props}) => {
     return (
-        <div className='tag'>
+        <div className='tags'>
             {
                 props.map((item, index) => {
-                    return (<div key={index}>{item}</div>)
+                    return (<div className="tag" key={index}>{item}</div>)
                 })
             }
         </div>

@@ -4,7 +4,19 @@
     }
 }
 
+.home-banner {
+    position: relative;
+}
+
+.home-title {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+}
+
 .gallery {
+    margin-top: 6px;
+    padding-bottom: 40px;
     display: flex;
     border-radius: 25px;
     width: 100%;
@@ -14,6 +26,8 @@
     justify-content: center;
     justify-content: space-evenly;
     @include for-tablette {
+        margin-top: 43px;
+
     background-color: $color-back;
     }
 }

@@ -17,25 +17,25 @@ const Offers = () => {
 
     return (
         <main className="offers-main">
-            <Carrousel props={houses.pictures}/>
+            <Carrousel className="offers-carrousel" props={houses.pictures}/>
             <div className="offers-header">
-                <div className="offers-header_left">
+                <div className="offers-header-left">
                     <div className="offers-titles">
-                        <h1>{houses.title}</h1>
-                        <h2>{houses.location}</h2>
+                        <h1 className="offers-title">{houses.title}</h1>
+                        <h2 className="offers-location">{houses.location}</h2>
                     </div>
                     <div className="offers-tags">
                             <Tag props={houses.tags}/>
                     </div>
                 </div>
-                <div className="offers-header_right">
+                <div className="offers-header-right">
                     <div className="offers-info">
-                        <div className="offers-owner">
-                            <div>{houses.host.name}</div>
-                            <img src={`${houses.host.picture}`} alt="Portrait du Proprietaire" />
-                            <div className="offers-rating">
+                    <div className="offers-rating">
                             <Rating props={houses.rating}/>
-                            </div>
+                    </div>
+                        <div className="offers-owner">
+                            <div className="owner-name">{houses.host.name}</div>
+                            <img className="owner-img" src={`${houses.host.picture}`} alt="Portrait du Proprietaire" />
                         </div>
                     </div>
                 </div>

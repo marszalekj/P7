@@ -22,7 +22,7 @@ const Carrousel = ({props}) => {
 
     return (
         <div className="carrousel-container">
-                <img className='current-img' src={props[currentImg]} alt= 'Carrousel du logement'/>
+                <img className='carrousel-img' src={props[currentImg]} alt= 'Carrousel du logement'/>
             <div className='carrousel-count'>
                 {currentImg +1 }
                  / 

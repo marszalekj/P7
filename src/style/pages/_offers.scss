@@ -1,0 +1,133 @@
+.offers-main {
+    position: relative;
+}
+
+
+.offers-titles {
+    display: flex;
+flex-direction: column;
+width: 335px;
+height: 73px;
+justify-content: space-around;
+@include for-desktop {
+    margin-bottom: 20px;
+    width: 635px;
+ }
+}
+
+.offers-title {
+    display: flex;
+align-items: flex-end;
+    font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 25.67px;
+color: $color-orange;
+@include for-desktop {
+    font-size: 36px;
+    line-height: 51.34px;
+}
+ 
+}
+
+.offers-location {
+    display: flex;
+align-items: flex-end;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19.96px;
+    color: $color-orange;
+    @include for-desktop {
+        font-size: 18px;
+        line-height: 25.67px;
+    }
+}
+
+.offers-header {
+    @include for-desktop {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 12px;
+    }
+
+    .offers-header-left {
+        @include for-desktop {
+        }
+    }
+
+.offers-header-right {
+    @include for-desktop {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.offers-info {
+    display: flex;
+    justify-content: space-between;
+    @include for-desktop {
+        flex-direction: column-reverse;
+    }
+    .offers-owner {
+        display: flex;
+    }
+}
+
+.offers-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include for-desktop {
+        padding-left: 92px;
+        padding-top: 21px;
+    }
+}
+
+.offers-owner {
+    display: flex;
+    width: 135.5px;
+    height: 33px;
+    justify-content: flex-end;
+    @include for-desktop {
+        width: 270px;
+        height: 64px;
+
+    }
+
+
+
+}
+
+.owner-name {
+    display: flex;
+    font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 17.11px;
+align-items: center;
+padding-right: 10.5px;
+max-width: 93px;
+width: auto;
+text-align: right;
+color: $color-orange;
+@include for-desktop {
+    font-size: 18px;
+    line-height: 25.67px;
+    align-items: center;
+}
+}
+.owner-img {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    @include for-desktop {
+        width: 64px;
+    height: 64px;
+    
+    }
+}
+}
