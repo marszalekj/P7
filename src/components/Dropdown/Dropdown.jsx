@@ -1,10 +1,10 @@
-import useState from 'react';
+import {useState} from 'react';
 import vectorbas from "../../assets/Vectorbas.png"
 import vectorhaut from "../../assets/Vectorhaut.png"
 
-const Dropdown = ({ props}, title ) => {
+const Dropdown = ({ props, title} ) => {
 
-    const [isVisible, setIsVisible] = useState(0)
+    const [isVisible, setIsVisible] = useState(false)
     
     const handleClick = () => {
         isVisible ? setIsVisible(false) : setIsVisible(true)
@@ -25,21 +25,21 @@ const Dropdown = ({ props}, title ) => {
 
     return (
         <div className='dropdown'>
-            <div className="dropdown-head">
-                <h3>{title}</h3>
+            <div className="dropdown-header">
+                <h3 className='dropdown-title' >{title}</h3>
                 <button 
                     type='button'
                     onClick={() => handleClick()}
                 >{
-                    isVisible? <img src={vectorhaut} alt="Replier menu"/> : <img src={vectorbas} alt="Derouler menu"/>
+                    isVisible? <img className='vectorhaut' src={vectorhaut} alt="Replier menu"/> : <img className='vectorbas' src={vectorbas} alt="Derouler menu"/>
                 }
                 </button>
             </div>
-            
-                <div >
+            {isVisible && 
+                <div className={isVisible? 'dropdown-content  dropdown-content-active' : 'dropdown-content'}>
                     {displayProps()}
                 </div>
-            
+}
         </div>
     );
 }

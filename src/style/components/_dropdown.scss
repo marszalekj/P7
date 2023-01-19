@@ -1,0 +1,40 @@
+.dropdown {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.dropdown-header {
+    display: flex;
+    background-color: $color-orange;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.dropdown-title {
+    display: flex;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 18.54px;
+align-items: center;
+color: $color-white;
+margin-left: 11.51px;
+}
+
+.dropdown button  {
+    background :none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+
+}
+
+.dropdown-content {
+    background-color: $color-grey;
+    font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 17.11px;
+color: $color-orange;
+list-style: none;
+}

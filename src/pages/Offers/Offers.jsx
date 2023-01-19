@@ -40,14 +40,14 @@ const Offers = () => {
                     </div>
                 </div>
             </div>
-            {/*<div className="offers-dropdowns">
-                    <div className="offers-desccription">
+            <div className="offers-dropdowns">
+                    <div className="offers-description">
                         <Dropdown props={houses.description} title={"Description"}/>
                     </div>
                     <div className="offers-equipements">
                         <Dropdown props={houses.equipments} title={"Equipements"}/>
                     </div>
-    </div>*/}
+    </div>
         </main>
     );
 }
