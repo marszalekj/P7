@@ -12,11 +12,11 @@ const Dropdown = ({ props, title} ) => {
     const displayProps = () => {
         if(typeof props === "object"){
             return (
-                <ul>
+                <div>
                     {props.map((item, index) => (
-                        <li key={index}>{item}</li>
+                        <p key={index}>{item}</p>
                     ))}
-                </ul>
+                </div>
             )
         }else{
             return <p>{props}</p>
@@ -36,7 +36,7 @@ const Dropdown = ({ props, title} ) => {
                 </button>
             </div>
             {isVisible && 
-                <div className={isVisible? 'dropdown-content  dropdown-content-active' : 'dropdown-content'}>
+                <div className='dropdown-content'>
                     {displayProps()}
                 </div>
 }

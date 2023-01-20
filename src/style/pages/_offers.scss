@@ -57,7 +57,7 @@ align-items: flex-end;
         @include for-desktop {
         }
     }
-
+}
 .offers-header-right {
     @include for-desktop {
         display: flex;
@@ -130,4 +130,23 @@ color: $color-orange;
     
     }
 }
+
+.offers-dropdowns {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    @include for-desktop {
+        flex-direction: row;
+    }
+}
+
+
+
+.offers-description .offers-equipements {
+    padding-top: 20px ;
+    padding-bottom: 64.5px;
+    @include for-desktop {
+        padding-top: unset;
+        padding-bottom: unset;
+    }
 }

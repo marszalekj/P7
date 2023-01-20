@@ -23,5 +23,13 @@
 
 .banner-text {
     position: absolute;
-    
+    @include for-desktop {
+        display: flex;
+        width: 90%;
+    padding: 78px 262px 77px;
+        font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 68.45px;
+    }    
 }

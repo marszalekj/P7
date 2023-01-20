@@ -1,5 +1,4 @@
 .dropdown {
-    width: 100%;
     border-radius: 5px;
 }
 
@@ -19,6 +18,11 @@ line-height: 18.54px;
 align-items: center;
 color: $color-white;
 margin-left: 11.51px;
+@include for-desktop {
+    font-weight: 500;
+font-size: 18px;
+line-height: 25.67px
+}
 }
 
 .dropdown button  {
@@ -36,5 +40,12 @@ font-weight: 400;
 font-size: 12px;
 line-height: 17.11px;
 color: $color-orange;
-list-style: none;
+padding: 23.02px 6.91px 23.02px 11.51px;
+@include for-desktop {
+    padding: 40px 12px 53px 20px;
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25.67px;
+}
 }

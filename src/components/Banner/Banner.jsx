@@ -3,7 +3,7 @@ const Banner = (props) => {
         <div id="banner-container">
             <img className="banner-cover" src={props.img} alt="Banniere" />
             <div className="banner-text"> 
-                <h2>{props.txt}</h2>
+                <p>{props.txt}</p>
             </div>
         </div>
     )
