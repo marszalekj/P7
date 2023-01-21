@@ -1,7 +1,7 @@
-import Banner from "/Users/jeremy/Documents/Project 7/kasa/src/components/Banner/Banner.jsx";
-import Card from "/Users/jeremy/Documents/Project 7/kasa/src/components/Card/Card.jsx";
-import Houses from "/Users/jeremy/Documents/Project 7/kasa/src/houses.json";
-import BannerHome from "/Users/jeremy/Documents/Project 7/kasa/src/assets/backbannerhome.png"
+import Banner from "../../components/Banner/Banner.jsx";
+import Card from "../../components/Card/Card.jsx";
+import Houses from "../../houses.json";
+import BannerHome from "../../assets/backbannerhome.png"
 
 const Home = () => {
     return (
