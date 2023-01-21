@@ -4,6 +4,7 @@
     height: 255px;
     border-radius: 10px;
     margin-top: 20px;
+    background-color: $color-orange;
     
 
     @include for-tablette {
@@ -48,9 +49,11 @@
 
     .card-title {
         position: absolute;
+        font-style: normal;
+
         left: 20px;
         right: 20px;
-        bottom: 5px;
+        bottom: 20px;
         font-weight: 500;
         font-size: 18px;
         line-height: 25.67px;
