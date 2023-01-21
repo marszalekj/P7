@@ -12,7 +12,7 @@ const About = () => {
 
     return (
         <main className='about-main'>
-            <Banner img={BannerAbout} />
+            <Banner className="banner-about" img={BannerAbout} />
             <div className='dropdowns-about'>
                 <div className="droplist" ><Dropdown title="Fiabilité" props= {fiability}></Dropdown></div>
                 <div className="droplist" ><Dropdown title="Respect" props = {goodwill}></Dropdown></div>

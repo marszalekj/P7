@@ -1,3 +1,10 @@
+.about-main {
+    padding-top: 17px ;
+    @include for-desktop {
+        padding-top: 44px;
+    }
+}
+
 .droplist {
     padding-top: 20px;
     @include for-desktop {
@@ -6,8 +13,11 @@
 }
 
 .dropdowns-about {
+    
     padding-bottom: 100px;
     @include for-desktop {
         padding-bottom: 201px;
+        padding-left: 208px;
+        padding-right: 208px;
     }
 }
