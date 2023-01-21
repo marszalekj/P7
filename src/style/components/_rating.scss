@@ -1,5 +1,5 @@
-.rating  {
-    display: flex;
+.rating-full  {
+    
     width: 18px;
     height: 18px;
     @include for-tablette {
@@ -10,4 +10,22 @@
         width: 36px;
         height: 36px;
     }
+}
+
+.rating-empty {
+    width: 18px;
+    height: 18px;
+    @include for-tablette {
+        width: 28px;
+        height: 28px;
+    }
+    @include for-desktop {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.rating {
+    display: flex;
+    width: 98px;
 }

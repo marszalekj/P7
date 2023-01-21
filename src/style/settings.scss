@@ -5,11 +5,8 @@
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-}
 
-.body-page {
+body {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
@@ -28,4 +25,9 @@ a {
         padding-right: 100px;
         padding-top: 40px;
         }
+}
+footer {
+  position: absolute;
+  right: 0px;
+  left: 0px;
 }

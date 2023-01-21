@@ -5,7 +5,7 @@ import BannerHome from "/Users/jeremy/Documents/Project 7/kasa/src/assets/backba
 
 const Home = () => {
     return (
-        <body className='home-body'>
+        <main className='home-body'>
             <Banner className="home-banner" img={BannerHome} txt={"Chez vous, partout et ailleurs"}/>
                 <div className="gallery">
                     {
@@ -13,7 +13,7 @@ const Home = () => {
                             <Card key={house.id} house={house} />))
                     }
                 </div>
-        </body>
+        </main>
     ); 
 };
 

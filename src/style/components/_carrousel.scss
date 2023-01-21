@@ -75,3 +75,21 @@ line-height: 142.6%;
     border: none;
     cursor: pointer;
 }
+
+.previous-img {
+    max-width: 24px;
+    max-height: 24px;
+    @include for-desktop { 
+        min-width: 47px;
+        min-height: 79px;
+    }
+}
+
+.next-img {
+    max-width: 24px;
+    max-height: 24px;
+    @include for-desktop { 
+        min-width: 47px;
+        min-height: 79px;
+    }
+}

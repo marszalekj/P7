@@ -4,3 +4,10 @@
     padding-top: 31px;
     }
 }
+
+.dropdowns-about {
+    padding-bottom: 100px;
+    @include for-desktop {
+        padding-bottom: 201px;
+    }
+}

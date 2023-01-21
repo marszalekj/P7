@@ -29,10 +29,10 @@ const Carrousel = ({props}) => {
                 { props.length }
             </div>
             <button className='previous-btn' onClick={previous}>
-                <img src={previousImg} alt="Bouton précédent" />
+                <img className='previous-img' src={previousImg} alt="Bouton précédent" />
             </button>
             <button className='next-btn' onClick={next}>
-                <img src={nextImg} alt="Bouton suivant" />
+                <img className='next-img' src={nextImg} alt="Bouton suivant" />
             </button>
         </div>
     );

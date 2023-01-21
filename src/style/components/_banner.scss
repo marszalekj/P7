@@ -18,18 +18,52 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    
 
 }
 
 .banner-text {
+    
+    display: flex;
+   padding-left: 16px;
+   align-items: center;
+    width: 217px;
+    height: 100%;
+    font-size: 24px;
+    line-height: 24px;
+    color: $color-white;
     position: absolute;
-    @include for-desktop {
-        display: flex;
-        width: 90%;
-    padding: 78px 262px 77px;
+    @include for-tablette {
+        justify-content: center;
+        align-items: center;
         font-style: normal;
+        width: 100%;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 68.45px;
+    }
+    @include for-desktop {
+        justify-content: center;
+        align-items: center;
+        font-style: normal;
+        width: 100%;
     font-weight: 500;
     font-size: 48px;
     line-height: 68.45px;
     }    
+}
+
+.banner-filter {
+    position: absolute;
+    background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(0, 0, 0, 0.5) 100%
+        );
+    border-radius: 10px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    
 }

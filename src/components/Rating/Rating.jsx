@@ -16,7 +16,7 @@ const Rating = ({props}) => {
 
     return (
         <div className="rating">
-            {ratingString}
+            {ratingString.map((stars, index) => {return <div key={index}>{stars}</div>})}
         </div>
     );
 };

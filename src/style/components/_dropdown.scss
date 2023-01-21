@@ -26,15 +26,33 @@ line-height: 25.67px
 }
 
 .dropdown button  {
+    max-width: 18.42px;
+    max-height: 18.42px;
+    margin-right: 12px;
+    justify-content: center;
+    align-items: center;
     background :none;
     border: none;
     cursor: pointer;
     display: flex;
+    @include for-desktop {
+        min-width: 32px;
+    min-height: 32px;
+    }
+}
 
+.vectorhaut {
+    max-width: 18px;
+
+}
+
+.vectorbas {
+    max-width: 18px;
 }
 
 .dropdown-content {
     background-color: $color-grey;
+    border-radius: 10px;
     font-style: normal;
 font-weight: 400;
 font-size: 12px;
@@ -47,5 +65,7 @@ padding: 23.02px 6.91px 23.02px 11.51px;
 font-weight: 400;
 font-size: 18px;
 line-height: 25.67px;
+align-items: center;
 }
+
 }

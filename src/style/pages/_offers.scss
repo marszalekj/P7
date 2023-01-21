@@ -1,17 +1,18 @@
 .offers-main {
     position: relative;
+    width: 100%;
 }
 
 
 .offers-titles {
     display: flex;
 flex-direction: column;
-width: 335px;
-height: 73px;
-justify-content: space-around;
+max-width: 335px;
+max-height: 73px;
+margin-top: 9px ;
 @include for-desktop {
     margin-bottom: 20px;
-    width: 635px;
+    min-width: 635px;
  }
 }
 
@@ -41,6 +42,7 @@ align-items: flex-end;
     @include for-desktop {
         font-size: 18px;
         line-height: 25.67px;
+        padding-bottom: 20px;
     }
 }
 
@@ -49,30 +51,34 @@ align-items: flex-end;
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin-top: 30px;
+        margin-top: 20px;
         margin-bottom: 12px;
     }
 
-    .offers-header-left {
-        @include for-desktop {
-        }
-    }
+
 }
 .offers-header-right {
     @include for-desktop {
         display: flex;
-        justify-content: flex-end;
+    }
+}
+
+.offers-tags {
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    @include for-desktop {
+        padding-top: 40px;
     }
 }
 
 .offers-info {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     @include for-desktop {
         flex-direction: column-reverse;
-    }
-    .offers-owner {
-        display: flex;
+        align-items: flex-end;
     }
 }
 
@@ -81,8 +87,9 @@ align-items: flex-end;
     align-items: center;
     justify-content: space-between;
     @include for-desktop {
-        padding-left: 92px;
-        padding-top: 21px;
+        align-items: flex-end;
+        min-width: 196px;
+        margin-bottom: 20px;
     }
 }
 
@@ -92,9 +99,8 @@ align-items: flex-end;
     height: 33px;
     justify-content: flex-end;
     @include for-desktop {
-        width: 270px;
+        max-width: 270px;
         height: 64px;
-
     }
 
 
@@ -133,20 +139,31 @@ color: $color-orange;
 
 .offers-dropdowns {
     display: flex;
+    width: auto;
     flex-direction: column;
     padding-top: 16px;
     @include for-desktop {
-        flex-direction: row;
+        flex-direction: row  ;
+        justify-content: space-between;
+        padding-bottom: 16px;
+    }
+}
+
+.offers-description {
+    @include for-desktop {
+        width: 47%;
     }
 }
 
 
-
-.offers-description .offers-equipements {
+.offers-equipements {
     padding-top: 20px ;
     padding-bottom: 64.5px;
     @include for-desktop {
         padding-top: unset;
         padding-bottom: unset;
+        width: 47%;
+
+        
     }
 }
