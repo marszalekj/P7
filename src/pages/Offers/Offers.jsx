@@ -8,8 +8,9 @@ import Houses from '../../houses.json'
 
 const Offers = () => {
     
-    
+// utilisation de useParams afin d'afficher la page du logement conrrespondant a l'id    
     const { id } = useParams();
+// utilisation de la methode find afin de parcourir les logements et afficher les logements correspondant a l'id, sinon renvoie vers page erreur
     const houses = Houses.find((house) => house.id === id);
     if(!houses) {
         return <Navigate to="/404" />
