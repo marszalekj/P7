@@ -14,7 +14,10 @@ const Rating = ({props}) => {
         ratingString.push(
             <img className="rating-empty" src={starempty} alt={'Note sur 5' + props}></img>);
     }
+// utilisation de la methode .map pour recuperer chaque item et chaque index
+
 // ajout d'une key egale a l'index afin d'avoir un id unique et ne pas generer d'erreur
+
     return (
         <div className="rating">
             {ratingString.map((stars, index) => {return <div key={index}>{stars}</div>})}
