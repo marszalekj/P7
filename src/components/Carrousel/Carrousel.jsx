@@ -19,20 +19,20 @@ const Carrousel = ({props}) => {
             setCurrentImg(props.length - 1)
         }
     }
-
+// affichage des fleches et du compteurs si plus d'une photo, sinon on les masque via les operateurs logiques &&
     return (
         <div className="carrousel-container">
                 <img className='carrousel-img' src={props[currentImg]} alt= 'Carrousel du logement'/>
-            <div className='carrousel-count'>
+                {props.length > 1 &&<div className='carrousel-count'>
                 {currentImg +1 }
                  / 
                 { props.length }
-            </div>
-            <button className='previous-btn' onClick={previous}>
-                <img className='previous-img' src={previousImg} alt="Bouton précédent" />
+            </div>}
+            <button className='previous-btn' onClick={previous}>{props.length > 1 &&
+                <img className='previous-img' src={previousImg} alt="Bouton précédent" />}
             </button>
-            <button className='next-btn' onClick={next}>
-                <img className='next-img' src={nextImg} alt="Bouton suivant" />
+            <button className='next-btn' onClick={next}>{props.length > 1 &&
+                <img className='next-img' src={nextImg} alt="Bouton suivant" />}
             </button>
         </div>
     );
