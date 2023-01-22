@@ -7,7 +7,7 @@ import NotFound from "./pages/NotFound/NotFound";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import "../src/style/index.scss";
-
+// creation des routes via React Router
 const Router = () => {
   return (
     <>
