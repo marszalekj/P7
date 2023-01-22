@@ -3,6 +3,8 @@ import Card from "../../components/Card/Card.jsx";
 import Houses from "../../houses.json";
 import BannerHome from "../../assets/backbannerhome.png"
 
+// utilisation de la methode .map pour afficher chaque logement ainsi que donner une key via l'id de chaque logement
+ 
 const Home = () => {
     return (
         <main className='home-body'>
