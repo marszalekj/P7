@@ -3,9 +3,9 @@ import vectorbas from "../../assets/Vectorbas.png"
 import vectorhaut from "../../assets/Vectorhaut.png"
 
 const Dropdown = ({ props, title} ) => {
-
+// initialisation de l'etat a false
     const [isVisible, setIsVisible] = useState(false)
-    
+// gestion des evenements via operateur ternaire    
     const handleClick = () => {
         isVisible ? setIsVisible(false) : setIsVisible(true)
     }
@@ -22,6 +22,7 @@ const Dropdown = ({ props, title} ) => {
             return <p>{props}</p>
         }
     }
+ // affichage de l'evenements via operateur logique &&    
 
     return (
         <div className='dropdown'>

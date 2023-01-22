@@ -3,9 +3,9 @@ import previousImg from '../../assets/previous.png'
 import nextImg from '../../assets/next.png'
 
 const Carrousel = ({props}) => {
-
+// initialisation de l'etat a 0
     let [currentImg, setCurrentImg] = useState(0);
-
+// modification du state via son setter
     const next = () => {
         setCurrentImg(currentImg = currentImg + 1)
         if (currentImg + 1 > props.length) {
