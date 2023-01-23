@@ -79,6 +79,7 @@ align-items: flex-end;
     @include for-desktop {
         flex-direction: column-reverse;
         align-items: flex-end;
+        justify-content: space-evenly;
     }
 }
 
