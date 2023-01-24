@@ -32,7 +32,8 @@ const Dropdown = ({ props, title} ) => {
                     type='button'
                     onClick={() => handleClick()}
                 >{
-                    isVisible? <img className='vectorhaut' src={vectorhaut} alt="Replier menu"/> : <img className='vectorbas' src={vectorbas} alt="Derouler menu"/>
+                    isVisible? <img className='vectorhaut' src={vectorhaut} alt="Replier menu"/> 
+                    : <img className='vectorbas' src={vectorbas} alt="Derouler menu"/>
                 }
                 </button>
             </div>
@@ -40,7 +41,7 @@ const Dropdown = ({ props, title} ) => {
                 <div className='dropdown-content'>
                     {displayProps()}
                 </div>
-}
+            }
         </div>
     );
 }

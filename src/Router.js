@@ -11,16 +11,18 @@ import "../src/style/index.scss";
 const Router = () => {
   return (
     <>
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/home" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/offers/:id" element={<Offers />} />
-          <Route exact path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <div className="body-page">
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/home" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/offers/:id" element={<Offers />} />
+            <Route exact path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
       <Footer />
     </>
   );
