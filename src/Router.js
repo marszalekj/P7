@@ -12,7 +12,7 @@ const Router = () => {
   return (
     <>
       <div className="body-page">
-        <BrowserRouter>
+        <BrowserRouter basename="/P7">
           <Header />
           <Routes>
             <Route exact path="/" element={<Home />} />
